@@ -101,12 +101,12 @@
 		2A1E77351F384BFC006C84D4 /* {{cookiecutter.app_name}} */ = {
 			isa = PBXGroup;
 			children = (
-				C90395231FC622D2006F1DC0 /* main.swift */,
-				2A1E77361F384BFC006C84D4 /* AppDelegate.swift */,
+				ED9418BB241BA09000452900 /* Application */,
+				ED9418BD241BA43000452900 /* Interface adapters */,
+				ED9418BC241BA09C00452900 /* Frameworks & Drivers */,
 				2AFB31021F3853C6009C4586 /* Resources */,
 				2AFB31071F38542E009C4586 /* SupportingFiles */,
-				2AB31D9E1F38740A00B7D1F3 /* Models */,
-				2AB31D9F1F38741400B7D1F3 /* Modules */,
+				2A1DD4E21F38A09700712195 /* Launch */,
 				2AFB310A1F385A20009C4586 /* Helpers */,
 			);
 			path = "{{cookiecutter.app_name}}";
@@ -120,21 +120,6 @@
 				C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */,
 			);
 			path = "{{cookiecutter.app_name}}Tests";
-			sourceTree = "<group>";
-		};
-		2AB31D9E1F38740A00B7D1F3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		2AB31D9F1F38741400B7D1F3 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				2A1DD4E21F38A09700712195 /* Launch */,
-			);
-			path = Modules;
 			sourceTree = "<group>";
 		};
 		2AB31DA01F38742400B7D1F3 /* Fonts */ = {
@@ -221,6 +206,69 @@
 				553FC23B214047CB001D9362 /* R.generated.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		ED9418BB241BA09000452900 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C90395231FC622D2006F1DC0 /* main.swift */,
+				2A1E77361F384BFC006C84D4 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		ED9418BC241BA09C00452900 /* Frameworks & Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				ED9418C2241BA48200452900 /* DB */,
+				ED9418C1241BA47D00452900 /* UI */,
+			);
+			path = "Frameworks & Drivers";
+			sourceTree = "<group>";
+		};
+		ED9418BD241BA43000452900 /* Interface adapters */ = {
+			isa = PBXGroup;
+			children = (
+				ED9418C0241BA46700452900 /* Gateways */,
+				ED9418BF241BA46000452900 /* Controllers */,
+				ED9418BE241BA45700452900 /* Presenters */,
+			);
+			path = "Interface adapters";
+			sourceTree = "<group>";
+		};
+		ED9418BE241BA45700452900 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		ED9418BF241BA46000452900 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ED9418C0241BA46700452900 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		ED9418C1241BA47D00452900 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		ED9418C2241BA48200452900 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
