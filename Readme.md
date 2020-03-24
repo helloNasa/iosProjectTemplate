@@ -1,15 +1,16 @@
 ## iOS Project Template
 
-A template to jumpstart your next iOS project integrating best practices and tools.
+A template to jumpstart your next iOS project or Kata integrating best practices and tools.
 Supports Xcode 11, Swift 5.1
 
 ## Motivation
 
-When working for early stage startups I frequently had to start new projects from scratch. While doing this I noticed that I am spending a lot of time doing basic project setup and integrating basic tools and best practices in all projects from scratch.
+When working on my side-projects or katas I frequently had to start new projects from scratch. While doing this I noticed that I am spending a lot of time doing basic project setup and integrating basic tools and best practices in all projects from scratch.
 
-This template should save project setup time and also provide a common foundation that each team member will be accustomed to so that you don't have to think and explore the project structure and foundations. They will always be the same.
+This template should save project setup time and also provide an easy to update template that can evolve over time
+I copied this project from https://github.com/pgorzelany/iOS-project-template and modified it so fit my needs.
 
-For a more in-depth writeup of the motivation and project, check out [my blog post](https://medium.com/@piotr.gorzelany/ios-project-best-practices-and-tools-c46135b8116d).
+For a more in-depth writeup of the motivation and project, check out Piotr's blog post [my blog post](https://medium.com/@piotr.gorzelany/ios-project-best-practices-and-tools-c46135b8116d).
 
 ## Contains (best practices)
 
@@ -23,7 +24,6 @@ For a more in-depth writeup of the motivation and project, check out [my blog po
 * Standard Readme
 * Standard project structure
 * [Standard gitignore](https://github.com/github/gitignore/blob/master/Swift.gitignore)
-* Base classes for handling deeplinks and notifications
 
 ## Prerequisites:
 This project needs [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/installation.html)
@@ -37,31 +37,19 @@ brew install cookiecutter
 The project uses Cookiecutter for project templating. To create a new project from this template just run:
 
 ```
-cookiecutter https://github.com/pgorzelany/iOS-project-template.git
+cookiecutter https://github.com/helloNasa/iosProjectTemplate.git
+```
+
+alternatively, add this alias into your .zshrc 
+
+```
+alias newproj="cookiecutter https://github.com/helloNasa/iosProjectTemplate.git"
 ```
 
 You will get a prompt to give a new app name. Thats it, you should have a new folder with your new app created based on this template!
 
 The project is using cocoapods for managing external libraries and a Gemfile for managing the cocoapods version.
-To install the cocoapod dependencies do the following:
-
-Get Bundler
-
-```
-sudo gem install bundler
-```
-
-To install the specific cocoapods version run
-
-```
-bundle install
-```
-
-Then install the pods
-
-```
-bundle exec pod install
-```
+Bundler and pods will be automatically installed and the xcode project openned for you.
 
 ## Additional configuration
 
