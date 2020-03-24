@@ -1,6 +1,6 @@
 # {{cookiecutter.app_name}}
 
-Supports: iOS 10.x and above
+Supports: iOS 11.3 and above
 
 ## Branches:
 
