@@ -30,4 +30,14 @@ class RootRouter {
         controller.view.backgroundColor = UIColor.red
         setRootViewController(controller: controller, animatedWithOptions: nil)
     }
+
+    func loadMainAppStructureWithStoryboard() {
+        // Customize your app structure here
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+
+        guard let initialViewController = storyboard.instantiateInitialViewController() else {
+            fatalError("Could not find initial ViewController")
+        }
+        setRootViewController(controller: initialViewController, animatedWithOptions: nil)
+    }
 }
